@@ -69,7 +69,7 @@ const ImageGallery: React.FC<SetIsUploadedProps> = ({setIsUploaded, isUploaded})
 
   return (
     <div className="flex">
-      <div className="grid grid-cols-4 gap-4 flex-grow">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4 flex-grow">
         {images.map((image, index) => (
           <div key={index} className="relative group">
             <ImageThumbnail

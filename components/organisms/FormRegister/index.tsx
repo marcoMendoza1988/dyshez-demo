@@ -102,7 +102,7 @@ const FormRegister = () => {
                     gap: '2rem',
                     width: '100%'
                 }}>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <FormField
                         icon={<User />}
                         id="firstName"

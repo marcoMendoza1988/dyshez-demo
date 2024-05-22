@@ -15,7 +15,7 @@ type sectionProps = {
 const AuthenticationSection:React.FC<sectionProps> = ({children, column = true}) => {
     return (
       <section className="container mx-auto p-6 h-[100vh]">
-        <div className={`${column ? 'grid grid-cols-1 md:grid-cols-3 h-[100%]' : 'flex gap-[5rem]'}`}>
+        <div className={`${column ? 'grid grid-cols-1 lg:grid-cols-3 h-[100%]' : 'grid lg:flex gap-[5rem]'}`}>
           <div className="p-4 rounded-md">
             <Image src={Logo} alt="logo dyshez"/>
             <p className="text-[#E3026F]" style={{ fontSize: 18, fontWeight: 700, width: 'max-content' }}>¡Bienvenido de vuelta!</p>
@@ -23,7 +23,7 @@ const AuthenticationSection:React.FC<sectionProps> = ({children, column = true})
           <div className="p-4 rounded-md shadow-lg w-[100%]">
             {children}
           </div>
-          {column && <div className="bg-[#F6F6F6] relative">
+          {column && <div className="bg-[#F6F6F6] relative hidden lg:block">
             <span className="absolute top-[80px]"><Image src={vector1} alt="dyshez bg" /></span>
             <span className="absolute top-[140px] right-[40px]"><Image src={vector2} alt="dyshez bg" /></span>
             <span className="absolute bottom-[40px]"><Image src={vector3} alt="dyshez bg" /></span>

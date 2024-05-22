@@ -10,6 +10,8 @@ const ImageThumbnail: React.FC<ImageThumbnailProps> = ({ imageUrl, onClick }) =>
   
   return (
     <Image
+      width={100}
+      height={100}
       src={imageUrl}
       alt="Thumbnail"
       onClick={onClick}
