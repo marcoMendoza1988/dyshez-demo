@@ -1,4 +1,5 @@
 // components/atoms/ImagePreview.tsx
+import Image from 'next/image';
 import React from 'react';
 
 interface ImagePreviewProps {
@@ -16,7 +17,7 @@ const ImagePreview: React.FC<ImagePreviewProps> = ({ imageUrl, onClose }) => {
         >
           Close
         </button>
-        <img src={imageUrl} alt="Preview" className="max-w-full max-h-full mt-8" />
+        <Image src={imageUrl} alt="Preview" className="max-w-full max-h-full mt-8" />
       </div>
     </div>
   );

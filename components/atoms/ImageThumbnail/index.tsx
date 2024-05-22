@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface ImageThumbnailProps {
@@ -8,7 +9,7 @@ interface ImageThumbnailProps {
 const ImageThumbnail: React.FC<ImageThumbnailProps> = ({ imageUrl, onClick }) => {
   
   return (
-    <img
+    <Image
       src={imageUrl}
       alt="Thumbnail"
       onClick={onClick}

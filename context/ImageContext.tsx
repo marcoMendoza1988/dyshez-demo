@@ -27,7 +27,7 @@ export const ImageProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       return;
     }
 
-    const imageUrls = data.map(file => {
+    const imageUrls = data.map((file: any) => {
       const { publicUrl } = supabase.storage.from('pictures').getPublicUrl(`uploads/${file.name}`).data;
       return publicUrl;
     });

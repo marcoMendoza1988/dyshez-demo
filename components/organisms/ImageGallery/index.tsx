@@ -27,7 +27,7 @@ const ImageGallery: React.FC<SetIsUploadedProps> = ({setIsUploaded, isUploaded})
       fetchImages();
       setIsUploaded(false)
     }
-
+    /* eslint-disable react-hooks/exhaustive-deps */
   }, [isUploaded]);
 
   const fetchImages = async () => {

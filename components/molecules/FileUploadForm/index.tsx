@@ -18,6 +18,7 @@ const FileUploadForm: React.FC<SetIsUploadedProps> = ({setIsUploaded}) => {
     if(files){
         handleUpload();
     }
+    /* eslint-disable react-hooks/exhaustive-deps */
   },[files]);
 
   const handleUpload = async () => {
